@@ -1,12 +1,33 @@
 body {
     font-family: sans-serif;
 }
+
 html {
     scroll-behavior: smooth;
 }
-:root a{
+
+:root a {
     color: inherit;
 }
+
+.right_bar {
+    top: 0;
+    right: 0;
+    widows: 10px;
+    height: 100%;
+    position: fixed;
+    border-left: 10px solid #333333;
+}
+
+.left_bar {
+    top: 0;
+    left: 0;
+    widows: 10px;
+    height: 100%;
+    position: fixed;
+    border-left: 10px solid #333333;
+}
+
 .menu {
     display: flex;
     top: 0;
@@ -15,12 +36,14 @@ html {
     width: 100%;
     position: fixed;
 }
+
 .btn_bar {
     position: fixed;
     display: flex;
     right: 10px;
     top: 20px;
 }
+
 .btn_bar a {
     position: relative;
     padding: 10px;
@@ -31,6 +54,7 @@ html {
     margin-left: 2rem;
     text-decoration: none;
 }
+
 .btn_bar a::after {
     content: "";
     position: absolute;
@@ -42,14 +66,17 @@ html {
     transform: scaleX(0);
     transform-origin: left;
 }
+
 .btn_bar a:hover::after {
     animation: underlineSlide 1s infinite alternate ease-in-out;
 }
+
 .logo {
     padding-left: 5px;
     padding-top: 5px;
     display: flex;
 }
+
 .logo img {
     height: 221px;
     width: 161px;
@@ -60,16 +87,25 @@ html {
     width: 80px;
     height: 110px;
 }
+
+.university_logo img{
+    width: 84px;
+    height: 82px;
+}
+
 .head_name_mark.logo-shrink {
     font-size: 10px;
 }
+
 .head_name_desc.logo-shrink {
     font-size: 10px;
 }
+
 .logo_link {
     height: auto;
     display: block;
 }
+
 .head_name {
     top: 20px;
     left: 10px;
@@ -83,6 +119,7 @@ html {
     font-family: sans-serif;
     transition: all 0.5s;
 }
+
 .head_name div:first-child {
     font-size: 4rem;
 }
@@ -114,7 +151,7 @@ html {
 .content1_head {
     font-family: sans-serif;
     font-size: 2rem;
-    
+
 }
 
 .content1_desc {
@@ -132,13 +169,16 @@ html {
     transform: translateY(50px);
     transition: all .5s ease;
 }
+
 .content2_desc {
     padding-left: 50px;
 }
+
 .content2.show {
     opacity: 1;
     transform: translateY(0);
 }
+
 .content3 {
     margin-left: 20%;
     margin-right: 20%;
@@ -150,13 +190,16 @@ html {
     transform: translateY(50px);
     transition: all .5s ease;
 }
+
 .content3_desc {
     padding-left: 50px;
 }
+
 .content3.show {
     opacity: 1;
     transform: translateY(0);
 }
+
 .footer {
     width: 100%;
     /* bottom: 20%; */
@@ -168,14 +211,17 @@ html {
 .footer_content1 {
     padding: 30px;
 }
+
 .footer_content2 {
     padding: 30px;
     display: inline-block;
 }
+
 .contact_link {
     position: relative;
     text-decoration: none;
 }
+
 .contact_link::after {
     content: "";
     position: absolute;
@@ -187,33 +233,39 @@ html {
     transform: scaleX(0);
     transform-origin: left;
 }
+
 .contact_link:hover::after {
     animation: underlineSlide 1s infinite alternate ease-in-out;
 }
+
 .line {
     width: 100%;
     border-bottom: 2px solid black;
 }
+
 .footer_content3 {
     padding: 30px;
 }
 
 @keyframes underlineSlide {
-  0% {
-    transform: scaleX(0);
-    transform-origin: left;
-  }
-  50% {
-    transform: scaleX(1);
-    transform-origin: left;
-  }
-  51% {
-    transform-origin: right;
-  }
-  100% {
-    transform: scaleX(0);
-    transform-origin: right;
-  }
+    0% {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+
+    50% {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+
+    51% {
+        transform-origin: right;
+    }
+
+    100% {
+        transform: scaleX(0);
+        transform-origin: right;
+    }
 }
 
 .member1 {
@@ -226,25 +278,31 @@ html {
     transform: translateY(50px);
     transition: all .5s ease;
 }
+
 .member1.show {
     opacity: 1;
     transform: translateY(0);
 }
-.member1_desc, .member2_desc{
+
+.member1_desc,
+.member2_desc {
     display: flex;
     padding-left: 10px;
     position: relative;
     flex-direction: column;
 }
 
-.member1_desc_title, .member2_desc_title {
+.member1_desc_title,
+.member2_desc_title {
     position: relative;
     padding-bottom: 20px;
 }
 
-.member1_desc_thesis, .member2_desc_thesis {
+.member1_desc_thesis,
+.member2_desc_thesis {
     position: relative;
 }
+
 .member2 {
     display: flex;
     flex-direction: row-reverse;
@@ -256,10 +314,12 @@ html {
     transform: translateY(50px);
     transition: all .5s ease;
 }
+
 .member2.show {
     opacity: 1;
     transform: translateY(0);
 }
+
 .main {
     display: flex;
     position: relative;
@@ -279,20 +339,24 @@ html {
     display: flex;
     position: relative;
 }
+
 .contact_name {
     display: flex;
     position: relative;
 }
+
 .information {
     display: flex;
     flex-direction: column;
 }
+
 .message {
     padding-left: 100px;
     display: flex;
     flex-direction: column;
     position: relative;
 }
+
 .info_message {
     position: relative;
     width: 300px;
@@ -300,17 +364,21 @@ html {
     font-size: 1.4rem;
     padding: 10px;
 }
+
 .info_name {
     position: relative;
 }
+
 .info_institute {
     position: relative;
     padding-top: 50px;
 }
+
 .info_mail {
     position: relative;
     padding-top: 50px;
 }
+
 .info_question {
     position: relative;
     margin-top: 50px;
